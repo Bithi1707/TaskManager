@@ -68,14 +68,13 @@ class TaskManagerApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/':(context)=>SplashScreen(),//home to Splash screen(Logo page)
-        '/sign-in':(context)=>SignInScreen(), //logopage to Get Started With page
+        '/':(context)=>SplashScreen(),
+        '/sign-in':(context)=>SignInScreen(), 
         '/sign-up':(context)=>SignUpScreen(),
          '/forget-pass':(context)=>ForgetPassScreen(),
          '/pin-verification': (context) => PinVerificationScreen(),
          '/change-password': (context) => ChangePasswordScreen(),
         '/main_nav_bar_holder': (context) => MainNavBarHolder(),
-       // '/progress_task_new_list': (context) => ProgressTaskNewlist()
          '/add_new_taskScreen' : (context)=>AddNewTaskscreen(),
         '/update_profile_Screen' : (context)=>UpdateProfileScreen(),
 
