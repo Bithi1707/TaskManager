@@ -44,9 +44,9 @@ class _PinVerificationScreenState extends State<PinVerificationScreen> {
                       animationType: AnimationType.fade,
                       keyboardType: TextInputType.number,
                       controller: _otpController,
-                      appContext: context, // ✅ This should be just 'context', no need for parentheses
+                      appContext: context, 
                       pinTheme: PinTheme(
-                        shape: PinCodeFieldShape.box, // ✅ Change to box
+                        shape: PinCodeFieldShape.box, 
                         borderRadius: BorderRadius.circular(8),
                         fieldHeight: 50,
                         fieldWidth: 45,
@@ -59,7 +59,7 @@ class _PinVerificationScreenState extends State<PinVerificationScreen> {
                         borderWidth: 1,
                       ),
                       animationDuration: Duration(milliseconds: 300),
-                      enableActiveFill: true, // ✅ Needed to see box fill color
+                      enableActiveFill: true, 
                       backgroundColor: Colors.transparent,
                       onChanged: (value) {},
                     ),
@@ -98,13 +98,7 @@ class _PinVerificationScreenState extends State<PinVerificationScreen> {
         )
     );
   }
-  // void _onTabSubmitButton(){
-  //   if(_formkey.currentState!.validate()){
-  //     //TODO: Sign in API
-  //     Navigator.pushNamedAndRemoveUntil(context, '/change-password', (predicate)=>false);
-  //
-  //   }
-  // }
+  
 
   void _onTabSubmitButton(){
     if (_otpController.text.length == 6) {
