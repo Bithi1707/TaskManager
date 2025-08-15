@@ -35,10 +35,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     ),
                     Text("Set password",style: Theme.of(context).textTheme.titleLarge),
                     SizedBox(height: 4,),
-                    // Text("A 6 digit OTP has been sent to your Email",
-                    //     style: Theme.of(context).textTheme.titleSmall?.copyWith(
-                    //         color: Colors.grey
-                    //     )),
+                  
                     SizedBox(height: 4,),
                     TextFormField(
                       controller: _changeController,
@@ -103,7 +100,7 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
   }
   void _onTabSubmitButton(){
     if(_formkey.currentState!.validate()){
-      //TODO: Sign in API
+      
     }
   }
 
